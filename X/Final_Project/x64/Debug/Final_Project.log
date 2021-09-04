@@ -1,0 +1,7 @@
+﻿  WinMain.cpp
+D:\zProgramação\CURSOS_NOVOS\LaSalle\4º Quater\05 - PORTFOLIO I\week-05 - Mid Term presentation\X\Final_Project\TileMap.h(34,79): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+D:\zProgramação\CURSOS_NOVOS\LaSalle\4º Quater\05 - PORTFOLIO I\week-05 - Mid Term presentation\X\Final_Project\TileMap.h(34,70): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+D:\zProgramação\CURSOS_NOVOS\LaSalle\4º Quater\05 - PORTFOLIO I\week-05 - Mid Term presentation\X\Final_Project\AnimalManager.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  LINK : D:\zProgramação\CURSOS_NOVOS\LaSalle\4º Quater\05 - PORTFOLIO I\week-05 - Mid Term presentation\X\x64\Debug\Final_Project.exe not found or not built by the last incremental link; performing full link
+     Creating library D:\zProgramação\CURSOS_NOVOS\LaSalle\4º Quater\05 - PORTFOLIO I\week-05 - Mid Term presentation\X\x64\Debug\Final_Project.lib and object D:\zProgramação\CURSOS_NOVOS\LaSalle\4º Quater\05 - PORTFOLIO I\week-05 - Mid Term presentation\X\x64\Debug\Final_Project.exp
+  Final_Project.vcxproj -> D:\zProgramação\CURSOS_NOVOS\LaSalle\4º Quater\05 - PORTFOLIO I\week-05 - Mid Term presentation\X\x64\Debug\Final_Project.exe

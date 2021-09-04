@@ -1,0 +1,52 @@
+
+grass.png ----> 0 green
+flower.png ---> 1 green
+
+tree0.png-----> 2
+tree1.png-----> 3
+tree2.png-----> 4 green
+tree3.png-----> 5
+
+tree0_2.png---> 6
+tree1_2.png---> 7 brown
+tree2_2.png---> 8
+tree3_2.png---> 9
+
+MA.png--------> :
+MB.png--------> ; green
+MC.png--------> <
+MD.png--------> =
+
+MA_2.png------> >
+MB_2.png------> ?
+MC_2.png------> @ brown
+MD_2.png------> A
+
+Rock1.png-----> B Green
+Rock2.png-----> C Brown
+Rock3.png-----> D Brown
+Rock4.png-----> E Green
+
+Water.png----------> F  MID
+Water_Rgrass.png---> G  Right
+Water_Lgrass.png --> H Left
+
+flower_1.png ---> I
+flower_0.png----> J
+flower_3.png----> K
+
+GrassD_DirtU.png --> L
+GrassU_DirtD.png --> M
+GrassR_DirtL.png --> N
+GrassL_DirtR.png --> O // 31
+grass_2.png -------> P
+
+flower_2.png ------> Q brown
+
+Broken_B.png ------> R brown  //34
+Broken_G.png ------> S green  //35
+
+TreeA.png --------> T
+TreeB.png --------> U
+TreeC.png --------> V
+TreeD.png --------> X

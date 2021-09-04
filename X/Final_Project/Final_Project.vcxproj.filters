@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="TileMap.cpp" />
+    <ClCompile Include="XCamera.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="PickUp.cpp" />
+    <ClCompile Include="Food.cpp" />
+    <ClCompile Include="ObjectsManager.cpp" />
+    <ClCompile Include="Resource.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="InventoryItem.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="CraftPanel.cpp" />
+    <ClCompile Include="Animal.cpp" />
+    <ClCompile Include="Insect.cpp" />
+    <ClCompile Include="AnimalManager.cpp" />
+    <ClCompile Include="ChasingMonster.cpp" />
+    <ClCompile Include="ChasingCalculation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TileMap.h" />
+    <ClInclude Include="XCamera.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="PickUp.h" />
+    <ClInclude Include="Food.h" />
+    <ClInclude Include="ObjectsManager.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="InventoryItem.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="CraftPanel.h" />
+    <ClInclude Include="Animal.h" />
+    <ClInclude Include="Insect.h" />
+    <ClInclude Include="AnimalManager.h" />
+    <ClInclude Include="ChasingMonster.h" />
+    <ClInclude Include="ChasingCalculation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Maps">
+      <UniqueIdentifier>{bc86ab63-0726-4cb6-b69b-7469c2e1ac83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="chapter_1.txt">
+      <Filter>Maps</Filter>
+    </Text>
+    <Text Include="tile_Info01.txt">
+      <Filter>Maps</Filter>
+    </Text>
+    <Text Include="Legend.txt">
+      <Filter>Maps</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xconfig.json" />
+  </ItemGroup>
+</Project>
