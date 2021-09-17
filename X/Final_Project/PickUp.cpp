@@ -70,7 +70,7 @@ bool PickUp::CheckCollision()
 		if (distanceEF <= radiiEF)
 		{
 			const X::Math::Vector2 screenPosition = XCamera::Get().ConverteToScreenPosition(mPosition);
-			X::DrawScreenText("Press Space to collect the iten",screenPosition.x + 10,screenPosition.y , 14, X::Colors::White);
+			X::DrawScreenText("Press Space to collect the item",screenPosition.x + 10,screenPosition.y , 14, X::Colors::White);
 			
 			if (actionB)
 			{

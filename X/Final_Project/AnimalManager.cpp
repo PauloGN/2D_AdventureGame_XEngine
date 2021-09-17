@@ -1,5 +1,5 @@
 #include "AnimalManager.h"
-#include "Character.h"
+
 
 namespace
 {
@@ -41,6 +41,7 @@ void AnimalManager::LoadInsects()
 
 	insects = std::make_unique<Insect[]>(maxEnemies);
 	monster = std::make_unique<ChasingMonster>();
+	WinTheGame = false;
 
 	for (int i = 0; i < maxEnemies; i++)
 	{
@@ -116,6 +117,7 @@ void AnimalManager::CheckCollision()
 			if (distanceEF <= radiiEF)
 			{
 
+
 				Character::Get().TakeDamage(5);
 				currentEnemy.Kill();
 
@@ -124,4 +126,37 @@ void AnimalManager::CheckCollision()
 
 		}
 	}
+
+
+	if (monster.get()->GetIsActice())
+	{
+
+		const X::Math::Circle enemyCircle = monster.get()->GetBoundingCircle();
+
+		const float distanceEF = X::Math::Distance(enemyCircle.center, CharacterCircle.center);
+		const float radiiEF = enemyCircle.radius + CharacterCircle.radius;
+
+		if (distanceEF <= radiiEF)
+		{
+			
+				
+			WinTheGame = Character::Get().HasTool2Win();
+				
+
+			if (WinTheGame)
+			{
+				monster.get()->Kill();
+			}
+			else
+			{
+				Character::Get().TakeDamage(100);
+			}
+		
+		}
+
+
+	}
+
+
+
 }

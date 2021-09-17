@@ -18,6 +18,7 @@ private:
 	X::TextureId textureId_StartMenu = 0; // Back Ground Image
 	X::TextureId textureId_GameOver = 0; // Back Ground Image
 	X::TextureId textureId_Controls = 0; // Back Ground Image
+	X::TextureId textureId_WinMenu = 0; // Back Ground Image
 	X::SoundId backGroundSound = 0;
 	X::SoundId gameOverSound = 0;
 	GameStates gs;
@@ -25,6 +26,7 @@ private:
 
 	void GamePlay(float deltaTime);
 	void GameMenu();
+	void GameWin();
 	void GameOver();
 	void GameControlMenu();
 	void RestartGame();

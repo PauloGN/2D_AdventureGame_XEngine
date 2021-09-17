@@ -62,6 +62,14 @@ void GameManager::GamePlay(float deltaTime)
 		CraftPanel::Get().Render();
 	}
 
+	
+
+	if (AnimalManager::Get().WinTheGame)
+	{
+		gs = GameStates::gameWin;
+	}
+
+
 }
 
 void GameManager::GameMenu()       //************************************************
@@ -69,8 +77,17 @@ void GameManager::GameMenu()       //*******************************************
 	X::StopSoundLoop(backGroundSound);
 	//Background menu image
 	X::DrawSprite(textureId_StartMenu, { (float)X::GetScreenWidth() / 2, (float)X::GetScreenHeight() / 2 }); // change to * 0.5
-
 }
+
+
+void GameManager::GameWin()     //************************************************
+{
+	
+	X::StopSoundLoop(backGroundSound);
+	//Background menu image
+	X::DrawSprite(textureId_WinMenu, { (float)X::GetScreenWidth() / 2, (float)X::GetScreenHeight() / 2 }); // change to * 0.5
+}
+
 
 void GameManager::GameOver()
 {
@@ -121,6 +138,7 @@ void GameManager::Load()
 	//Game Initialization
 
 	textureId_StartMenu = X::LoadTexture("Game Menu.png");
+	textureId_WinMenu = X::LoadTexture("Win.png");
 	textureId_GameOver = X::LoadTexture("GameOver.png");
 	textureId_Controls = X::LoadTexture("Controls.png");
 	backGroundSound = X::LoadSound("background-music.wav");
@@ -224,7 +242,7 @@ void GameManager::Update(float deltaTime)
 		break;
 	case GameStates::gameWin:
 
-		GameOver();
+		GameWin();
 		if (X::IsKeyPressed(X::Keys::ENTER))
 		{
 			RestartGame();

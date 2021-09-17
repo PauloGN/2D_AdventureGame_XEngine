@@ -100,7 +100,7 @@ void Character::Load()
     mThirst = 100;
     mHealth = 100;
     
-    mPosition = {1250,800};
+    mPosition = {1250,900};
 
     isGameOver = false;
     isInventoryOpen = false;
@@ -542,17 +542,36 @@ ToolType Character::CharacterHasTool(const ToolType& toolT)
     
     if (!toolVec.empty())
     {
-        for (auto &iten : toolVec)
+        for (auto &item : toolVec)
         {
 
-            if (iten.myTool == toolT && iten.durability > 0 )
+            if (item.myTool == toolT && item.durability > 0 )
             {
-                return iten.myTool;
+                return item.myTool;
             }
         }
     }
 
     return ToolType::none;
+}
+
+bool Character::HasTool2Win()
+{
+    const ToolType toolT = ToolType::spear;
+
+    if (!toolVec.empty())
+    {
+        for (auto& item : toolVec)
+        {
+
+            if (item.myTool == toolT)
+            {
+                return true;
+            }
+        }
+    }
+
+    return false;
 }
 
 

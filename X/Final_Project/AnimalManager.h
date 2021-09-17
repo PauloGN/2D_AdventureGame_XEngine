@@ -1,6 +1,7 @@
 #pragma once
 #include"Insect.h"
 #include "ChasingMonster.h";
+#include "Character.h"
 class AnimalManager
 {
 
@@ -16,7 +17,8 @@ public:
 	static void StaticInitialize();
 	static void StaticTerminate();
 	static AnimalManager& Get();
-
+	bool WinTheGame;
+	ToolType tool;
 
 	//Insect
 

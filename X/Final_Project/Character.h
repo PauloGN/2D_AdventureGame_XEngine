@@ -107,6 +107,7 @@ public:
 	// Struct Tool
 	void AddTool(ToolType toolT, X::TextureId textureId);
 	ToolType CharacterHasTool(const ToolType& toolT);
+	bool HasTool2Win();
 	void DecreaseDurability(ToolType toolT);
 	const X::Math::Vector2& ReturnPositionToRenderTool(size_t index);
 	void RenderMyToolInfo();
